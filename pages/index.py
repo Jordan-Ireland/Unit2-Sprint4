@@ -16,7 +16,7 @@ options.add_argument('--ignore-certificate-errors')
 options.add_argument('--incognito')
 options.add_argument('--headless')
 options.add_argument('log-level=3')
-driver = webdriver.Chrome("assets/chromedriver", options=options)
+driver = webdriver.Chrome("../assets/chromedriver", options=options)
 
 import pickle
 with open('notebooks/pipeline.pkl', 'rb') as f:
