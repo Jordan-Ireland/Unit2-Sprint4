@@ -2,6 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\assets",
+    "\\assets\\data",
+    "\\notebooks",
     "\\pages"
   ],
   "SelectedNode": "\\pages\\index.py",

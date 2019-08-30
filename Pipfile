@@ -19,6 +19,7 @@ selenium = {file = "https://files.pythonhosted.org/packages/ed/9c/9030520bf6ff0b
 joblib = {file = "https://files.pythonhosted.org/packages/2c/7f/c1da4e341d81840c2fa46d583cbc92bb02e5274fe601e9cbc72bcb78b2d7/joblib-0.13.2.tar.gz"}
 scipy = "*"
 scikit-learn = "*"
+urllib3 = {file = "https://files.pythonhosted.org/packages/4c/13/2386233f7ee40aa8444b47f7463338f3cbdf00c316627558784e3f542f07/urllib3-1.25.3.tar.gz"}
 
 [requires]
 python_version = "3.7"

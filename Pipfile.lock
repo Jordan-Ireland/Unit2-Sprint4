@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "0c51980c36700211fb516435984eceb838746aba10390c453b893967b50b26be"
+            "sha256": "1089ca124f7c957bcdc666e077ac706544016a649cc09f8f89223e69cf72c1c0"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -562,6 +562,9 @@
                 "sha256:c6cb5e6f57c5a9bdaa40fa71ce7b4af30298fbab9ece9815b5d995ab6217c7d9"
             ],
             "version": "==4.3.2"
+        },
+        "urllib3": {
+            "file": "https://files.pythonhosted.org/packages/4c/13/2386233f7ee40aa8444b47f7463338f3cbdf00c316627558784e3f542f07/urllib3-1.25.3.tar.gz"
         },
         "wcwidth": {
             "hashes": [
