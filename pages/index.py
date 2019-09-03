@@ -15,8 +15,8 @@ from selenium import webdriver
 chrome_exec_shim = "/app/.apt/opt/google/chrome/chrome"
 opts = webdriver.ChromeOptions()
 opts.binary_location = chrome_exec_shim
-opts.addArguments("--no-sandbox");
-opts.addArguments("--disable-gpu");
+opts.add_arguement("--no-sandbox");
+opts.add_arguement("--disable-gpu");
 driver = webdriver.Chrome(executable_path=chrome_exec_shim, chrome_options=opts)
 
 import pickle
