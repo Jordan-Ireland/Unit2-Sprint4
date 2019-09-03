@@ -1,4 +1,5 @@
 import dash
+import os
 import dash_bootstrap_components as dbc
 import dash_core_components as dcc
 import dash_html_components as html
@@ -12,12 +13,12 @@ import numpy as np
 
 from selenium import webdriver
 options = webdriver.ChromeOptions()
-options.binary_location = '/app/.apt/usr/bin/google-chrome'
 options.add_argument('--ignore-certificate-errors')
 options.add_argument('--incognito')
 options.add_argument('--headless')
 options.add_argument('log-level=3')
-driver = webdriver.Chrome("/app/.chromedriver/bin/chromedriver", options=options)
+chrome_exec_shim = os.environ.get("GOOGLE_CHROME_BIN", "chromedriver")
+driver = webdriver.Chrome(executable_path=chrome_exec_shim,options=options)
 
 import pickle
 with open('notebooks/pipeline.pkl', 'rb') as f:
