@@ -12,13 +12,10 @@ import pandas as pd
 import numpy as np
 
 from selenium import webdriver
+GOOGLE_CHROME_BIN = /app/.apt/opt/google/chrome/chrome
+GOOGLE_CHROME_SHIM = /app/.apt/usr/bin/google-chrome-stable
 options = webdriver.ChromeOptions()
-options.add_argument('--ignore-certificate-errors')
-options.add_argument('--incognito')
-options.add_argument('--headless')
-options.add_argument('log-level=3')
-chrome_exec_shim = os.environ.get("GOOGLE_CHROME_BIN", "chromedriver")
-driver = webdriver.Chrome(executable_path=chrome_exec_shim,options=options)
+driver = webdriver.Chrome(executable_path=GOOGLE_CHROME_SHIM,options=options)
 
 import pickle
 with open('notebooks/pipeline.pkl', 'rb') as f:
