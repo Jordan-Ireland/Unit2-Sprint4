@@ -12,8 +12,8 @@ import pandas as pd
 import numpy as np
 
 from selenium import webdriver
-GOOGLE_CHROME_BIN = /app/.apt/opt/google/chrome/chrome
-GOOGLE_CHROME_SHIM = /app/.apt/usr/bin/google-chrome-stable
+GOOGLE_CHROME_BIN = '/app/.apt/opt/google/chrome/chrome'
+GOOGLE_CHROME_SHIM = '/app/.apt/usr/bin/google-chrome-stable'
 options = webdriver.ChromeOptions()
 driver = webdriver.Chrome(executable_path=GOOGLE_CHROME_SHIM,options=options)
 
