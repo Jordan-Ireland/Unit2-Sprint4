@@ -12,10 +12,12 @@ import pandas as pd
 import numpy as np
 
 from selenium import webdriver
-GOOGLE_CHROME_BIN = '/app/.apt/opt/google/chrome/chrome'
-GOOGLE_CHROME_SHIM = '/app/.apt/usr/bin/google-chrome-stable'
-options = webdriver.ChromeOptions()
-driver = webdriver.Chrome(executable_path=GOOGLE_CHROME_SHIM,options=options)
+chrome_exec_shim = "/app/.apt/opt/google/chrome/chrome"
+opts = webdriver.ChromeOptions()
+opts.binary_location = chrome_exec_shim
+opts.addArguments("--no-sandbox");
+opts.addArguments("--disable-gpu");
+driver = webdriver.Chrome(executable_path=chrome_exec_shim, chrome_options=opts)
 
 import pickle
 with open('notebooks/pipeline.pkl', 'rb') as f:
